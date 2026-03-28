@@ -36,5 +36,6 @@ jobs:
         if: github.ref == 'refs/heads/main'
         uses: docker/build-push-action@v5
         with:
+          context: .
           push: true
           tags: ghcr.io/badrameur/task-manager-api:prod
